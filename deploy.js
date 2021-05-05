@@ -4,9 +4,8 @@ const { interface, bytecode} = require('./compile')
 const dotenv = require('dotenv')
 dotenv.config();
 const mnemonic = process.env.MNEMONIC
-const provider = new HDWalletProvider( mnemonic,
-    'https://rinkeby.infura.io/v3/9073792a124e477ea433d141ed5540d9'
-)
+const rinkeby = process.env.RINKEBY
+const provider = new HDWalletProvider( mnemonic,rinkeby)
 console.log(mnemonic);
 const web3 = new Web3(provider)
 
