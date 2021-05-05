@@ -1,0 +1,18 @@
+{
+  "name": "basic-ethereum-smart-contract",
+  "version": "1.0.0",
+  "description": "Just a basic ethereum smarth contract.",
+  "main": "compile.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Riley Seaburg",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ganache-cli": "^6.12.2",
+    "mocha": "^8.3.2",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3": "^1.3.5"
+  }
+}
