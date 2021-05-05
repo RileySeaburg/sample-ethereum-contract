@@ -1,10 +1,13 @@
 const HDWalletProvider = require('truffle-hdwallet-provider')
 const Web3 = require('web3')
 const { interface, bytecode} = require('./compile')
-const provider = new HDWalletProvider('analyst chase scheme spread staff toast install place harsh gentle example shine',
+const dotenv = require('dotenv')
+dotenv.config();
+const mnemonic = process.env.MNEMONIC
+const provider = new HDWalletProvider( mnemonic,
     'https://rinkeby.infura.io/v3/9073792a124e477ea433d141ed5540d9'
 )
-
+console.log(mnemonic);
 const web3 = new Web3(provider)
 
 const deploy = async () => {

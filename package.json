@@ -10,6 +10,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "dotenv": "^9.0.0",
     "ganache-cli": "^6.12.2",
     "mocha": "^8.3.2",
     "truffle-hdwallet-provider": "0.0.3",
